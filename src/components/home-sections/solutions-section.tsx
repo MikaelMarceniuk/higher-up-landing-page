@@ -38,7 +38,7 @@ export const SolutionsSection = () => {
                 com idiomas que precisam de soluções especializadas em
                 comunicação corporativa internacional.
               </p>
-              <Button className="bg-yellow-400 font-bold text-primary hover:bg-yellow-500">
+              <Button className="bg-secondary font-bold text-primary hover:bg-yellow-500">
                 Saiba Mais
               </Button>
             </div>
@@ -67,7 +67,7 @@ export const SolutionsSection = () => {
                 Soluções para profissionais buscando elevar seu nível de inglês
                 corporativo com foco em comunicação assertiva e intercultural.
               </p>
-              <Button className="bg-yellow-400 font-bold text-primary hover:bg-yellow-500">
+              <Button className="bg-secondary font-bold text-primary hover:bg-yellow-500">
                 Saiba Mais
               </Button>
             </div>

@@ -246,7 +246,7 @@
   }
 
   .cta-button {
-    @apply inline-block transform rounded-lg bg-yellow-400 px-8 py-4 font-bold text-purple-900 transition-all duration-200 hover:scale-105 hover:bg-yellow-500;
+    @apply inline-block transform rounded-lg bg-yellow-400 px-8 py-4 font-bold text-primary transition-all duration-200 hover:scale-105 hover:bg-yellow-500;
   }
 
   .bg-gradient-purple-yellow {

@@ -22,7 +22,7 @@ export const CTASection = () => {
         </p>
         <Button
           size="lg"
-          className="bg-yellow-400 px-10 py-6 text-lg font-bold text-primary hover:bg-yellow-500"
+          className="bg-secondary px-10 py-6 text-lg font-bold text-primary hover:bg-yellow-500"
         >
           Agendar diagnóstico estratégico
         </Button>
