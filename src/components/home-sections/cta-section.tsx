@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import { Button } from '@/ui/button'
+import Link from 'next/link'
+import { CONTACT_LINKS } from '@/constants/contact-links.constants'
 
 export const CTASection = () => {
   return (
@@ -20,12 +22,18 @@ export const CTASection = () => {
           Agende uma diagnóstico estratégico com nosso time. Vamos entender seus
           objetivos e desenhar o programa perfeito para você.
         </p>
-        <Button
-          size="lg"
-          className="bg-secondary px-10 py-6 text-lg font-bold text-primary hover:bg-yellow-500"
+        <Link
+          href={CONTACT_LINKS.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Agendar diagnóstico estratégico
-        </Button>
+          <Button
+            size="lg"
+            className="bg-secondary px-10 py-6 text-lg font-bold text-primary hover:bg-yellow-500"
+          >
+            Agendar diagnóstico estratégico
+          </Button>
+        </Link>
       </div>
     </section>
   )

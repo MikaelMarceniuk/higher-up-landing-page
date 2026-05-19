@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { Button } from '../ui/button'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
+import { CONTACT_LINKS } from '@/constants/contact-links.constants'
 
 export const HeroSection = () => {
   return (
@@ -34,13 +36,19 @@ export const HeroSection = () => {
             >
               Descobrir Programas <ArrowRight className="ml-2" />
             </Button>
-            <Button
-              size="lg"
-              variant="ghost"
-              className="border-white px-8 py-6 text-lg font-bold text-white"
+            <Link
+              href={CONTACT_LINKS.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Diagnóstico estratégico
-            </Button>
+              <Button
+                size="lg"
+                variant="ghost"
+                className="border-white px-8 py-6 text-lg font-bold text-white"
+              >
+                Diagnóstico estratégico
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
