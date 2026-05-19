@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { AppNavbar } from '@/components/app-navbar'
 
 import './globals.css'
+import { AppFooter } from '@/components/app-footer'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -33,6 +34,7 @@ export default function RootLayout({
         <ThemeProvider>
           <AppNavbar />
           {children}
+          <AppFooter />
         </ThemeProvider>
       </body>
     </html>
