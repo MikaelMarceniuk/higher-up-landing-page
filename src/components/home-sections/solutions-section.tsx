@@ -17,7 +17,7 @@ export const SolutionsSection = () => {
           {/* Para Empresas */}
           <div className="overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl">
             <Image
-              src={'/home-company.webp'}
+              src={'/international-team-collaboration.webp'}
               alt="Solução para empresas"
               className="h-64 w-full object-cover"
               width={800}
@@ -48,7 +48,7 @@ export const SolutionsSection = () => {
           {/* Para Profissionais */}
           <div className="overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl">
             <Image
-              src={'/home-professional.webp'}
+              src={'/executive-leadership-moment.webp'}
               alt="Solução para profissionais"
               className="h-64 w-full object-cover"
               width={800}

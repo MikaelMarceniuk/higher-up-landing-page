@@ -11,29 +11,63 @@ import {
 } from '@/components/ui/navigation-menu'
 import { useSmoothScroll } from '@/hooks/use-smooth-scroll.hook'
 import { SECTION_IDS } from '@/constants/section-ids.constants'
+import { usePathname, useRouter } from 'next/navigation'
 
 export const AppNavbar = () => {
   const { scrollTo } = useSmoothScroll()
+  const path = usePathname()
+  const router = useRouter()
+
+  const isRootPage = path == '/'
+
+  const renderLogo = () => {
+    if (!isRootPage) {
+      return (
+        <Link href={'/'}>
+          <Image
+            src="/logo-completo.webp"
+            height={40}
+            width={150}
+            alt="Higher Up Logo"
+            onClick={() => scrollTo(SECTION_IDS.hero)}
+            className="cursor-pointer"
+          />
+        </Link>
+      )
+    }
+
+    return (
+      <Image
+        src="/logo-completo.webp"
+        height={40}
+        width={150}
+        alt="Higher Up Logo"
+        onClick={() => scrollTo(SECTION_IDS.hero)}
+        className="cursor-pointer"
+      />
+    )
+  }
+
+  const onSolucaoClickHandler = () => {
+    if (!isRootPage) {
+      router.push(`/#${SECTION_IDS.solutions}`)
+      return
+    }
+
+    scrollTo(SECTION_IDS.solutions)
+  }
 
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur-sm">
       <div className="container flex items-center justify-between py-4">
-        <Image
-          src="/logo-completo.webp"
-          height={40}
-          width={150}
-          alt="Higher Up Logo"
-          onClick={() => scrollTo(SECTION_IDS.hero)}
-          className="cursor-pointer"
-        />
-
+        {renderLogo()}
         <div className="hidden items-center gap-8 md:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger
                   className="text-sm font-medium text-gray-700 hover:text-purple-900"
-                  onClick={() => scrollTo(SECTION_IDS.solutions)}
+                  onClick={onSolucaoClickHandler}
                 >
                   SOLUÇÕES DE COMUNICAÇÃO
                 </NavigationMenuTrigger>
@@ -70,7 +104,7 @@ export const AppNavbar = () => {
           </NavigationMenu>
 
           <Link
-            href="#quem-somos"
+            href="/about-us"
             className="text-sm font-medium text-gray-700 transition hover:text-purple-900"
           >
             QUEM SOMOS
