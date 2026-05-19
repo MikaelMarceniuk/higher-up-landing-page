@@ -13,17 +13,14 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "plugins": [{ "name": "next" }],
     "paths": {
-      "@/*": ["./*"],
-      "@/components": ["./src/components/*"],
-      "@/ui": ["./src/components/ui/*"],
-      "@/hooks": ["./src/hooks/*"],
-      "@/lib": ["./src/lib/*"]
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/ui/*": ["./src/components/ui/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/types/*": ["./src/@types/*"]
     }
   },
   "include": [

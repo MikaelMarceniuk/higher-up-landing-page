@@ -1,9 +1,10 @@
-import { Button } from '@/src/components/ui/button'
 import Image from 'next/image'
-import { HeroSection } from '../components/home-sections/hero-section'
-import { BelfSection } from '../components/home-sections/belf-section'
-import { SolutionsSection } from '../components/home-sections/solutions-section'
-import { WhyHigherUpSection } from '../components/home-sections/why-higher-up-section'
+import { HeroSection } from '@/components/home-sections/hero-section'
+import { BelfSection } from '@/components/home-sections/belf-section'
+import { SolutionsSection } from '@/components/home-sections/solutions-section'
+import { WhyHigherUpSection } from '@/components/home-sections/why-higher-up-section'
+import { TestimonialsSection } from '@/components/home-sections/testimonials-section'
+import { Button } from '@/components/ui/button'
 
 const Home = () => {
   return (
@@ -12,49 +13,7 @@ const Home = () => {
       <BelfSection />
       <SolutionsSection />
       <WhyHigherUpSection />
-
-      {/* Testimonials Section */}
-      <section className="bg-gray-50 py-20">
-        <div className="container">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-primary md:text-5xl">
-              TRANSFORMAÇÕES REAIS
-            </h2>
-            <p className="text-lg text-gray-600">
-              Profissionais que elevaram sua comunicação e impacto
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="flex min-h-64 flex-col items-center justify-center rounded-lg bg-red-600 p-8 text-center text-white shadow-lg transition-all hover:shadow-xl">
-              <h3 className="mb-4 text-2xl font-bold">
-                CARROSSEL
-                <br />
-                TESTIMONIALS
-              </h3>
-              <p className="text-sm">Depoimento de cliente</p>
-            </div>
-
-            <div className="flex min-h-64 flex-col items-center justify-center rounded-lg bg-red-600 p-8 text-center text-white shadow-lg transition-all hover:shadow-xl">
-              <h3 className="mb-4 text-2xl font-bold">
-                CARROSSEL
-                <br />
-                TESTIMONIALS
-              </h3>
-              <p className="text-sm">Depoimento de cliente</p>
-            </div>
-
-            <div className="flex min-h-64 flex-col items-center justify-center rounded-lg bg-red-600 p-8 text-center text-white shadow-lg transition-all hover:shadow-xl">
-              <h3 className="mb-4 text-2xl font-bold">
-                CARROSSEL
-                <br />
-                TESTIMONIALS
-              </h3>
-              <p className="text-sm">Depoimento de cliente</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
 
       {/* Final CTA Section */}
       <section className="relative overflow-hidden py-20">
