@@ -1,68 +1,19 @@
 import { Button } from '@/src/components/ui/button'
-import { Shield, Zap, TrendingUp } from 'lucide-react'
 import Image from 'next/image'
 import { HeroSection } from '../components/home-sections/hero-section'
+import { BelfSection } from '../components/home-sections/belf-section'
 
 const Home = () => {
   return (
     <div className="w-full bg-white">
       <HeroSection />
-
-      {/* BELF Section */}
-      <section className="bg-purple-900 py-20 text-white">
-        <div className="container">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold md:text-5xl">
-              BELF: ENGLISH AS BUSINESS
-              <br />
-              LINGUA FRANCA
-            </h2>
-            <p className="text-xl text-gray-200">
-              Única empresa do Brasil com pedagogia BELF!
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-400">
-                <Shield className="h-8 w-8 text-purple-900" />
-              </div>
-              <h3 className="mb-3 text-xl font-bold">CONFIANÇA</h3>
-              <p className="text-gray-200">
-                Seu inglês não precisa ser perfeito e nem &quot;nativo&quot;;
-                precisa ser efetivo.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-400">
-                <Zap className="h-8 w-8 text-purple-900" />
-              </div>
-              <h3 className="mb-3 text-xl font-bold">PRATICIDADE</h3>
-              <p className="text-gray-200">
-                Foco em situações reais, negociações, apresentações, etc.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-400">
-                <TrendingUp className="h-8 w-8 text-purple-900" />
-              </div>
-              <h3 className="mb-3 text-xl font-bold">MENSURÁVEL</h3>
-              <p className="text-gray-200">
-                Resultados claros: negócios fechados, promoções conquistadas,
-                influência expandida.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BelfSection />
 
       {/* Solutions Section */}
       <section id="solucoes" className="bg-gray-50 py-20">
         <div className="container">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-purple-900 md:text-5xl">
+            <h2 className="mb-4 text-4xl font-bold text-primary md:text-5xl">
               SOLUÇÕES DE COMUNICAÇÃO
             </h2>
           </div>
@@ -79,9 +30,9 @@ const Home = () => {
               />
               <div className="p-8">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-400">
-                  <span className="text-lg font-bold text-purple-900">🏢</span>
+                  <span className="text-lg font-bold text-primary">🏢</span>
                 </div>
-                <h3 className="mb-3 text-2xl font-bold text-purple-900">
+                <h3 className="mb-3 text-2xl font-bold text-primary">
                   Para empresas
                 </h3>
                 <p className="mb-6 text-gray-700">
@@ -93,7 +44,7 @@ const Home = () => {
                   com idiomas que precisam de soluções especializadas em
                   comunicação corporativa internacional.
                 </p>
-                <Button className="bg-yellow-400 font-bold text-purple-900 hover:bg-yellow-500">
+                <Button className="bg-yellow-400 font-bold text-primary hover:bg-yellow-500">
                   Saiba Mais
                 </Button>
               </div>
@@ -110,9 +61,9 @@ const Home = () => {
               />
               <div className="p-8">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-400">
-                  <span className="text-lg font-bold text-purple-900">👤</span>
+                  <span className="text-lg font-bold text-primary">👤</span>
                 </div>
-                <h3 className="mb-3 text-2xl font-bold text-purple-900">
+                <h3 className="mb-3 text-2xl font-bold text-primary">
                   Para profissionais
                 </h3>
                 <p className="mb-6 text-gray-700">
@@ -123,7 +74,7 @@ const Home = () => {
                   inglês corporativo com foco em comunicação assertiva e
                   intercultural.
                 </p>
-                <Button className="bg-yellow-400 font-bold text-purple-900 hover:bg-yellow-500">
+                <Button className="bg-yellow-400 font-bold text-primary hover:bg-yellow-500">
                   Saiba Mais
                 </Button>
               </div>
@@ -136,7 +87,7 @@ const Home = () => {
       <section className="bg-white py-20">
         <div className="container">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-purple-900 md:text-5xl">
+            <h2 className="mb-4 text-4xl font-bold text-primary md:text-5xl">
               POR QUE A HIGHER-UP?
             </h2>
           </div>
@@ -147,7 +98,7 @@ const Home = () => {
                 <span className="text-lg font-bold text-white">1</span>
               </div>
               <div>
-                <h3 className="mb-2 text-2xl font-bold text-purple-900">
+                <h3 className="mb-2 text-2xl font-bold text-primary">
                   Mentoria
                 </h3>
                 <p className="text-gray-700">
@@ -162,7 +113,7 @@ const Home = () => {
                 <span className="text-lg font-bold text-white">2</span>
               </div>
               <div>
-                <h3 className="mb-2 text-2xl font-bold text-purple-900">
+                <h3 className="mb-2 text-2xl font-bold text-primary">
                   Resultados
                 </h3>
                 <p className="text-gray-700">
@@ -177,7 +128,7 @@ const Home = () => {
                 <span className="text-lg font-bold text-white">3</span>
               </div>
               <div>
-                <h3 className="mb-2 text-2xl font-bold text-purple-900">
+                <h3 className="mb-2 text-2xl font-bold text-primary">
                   Competência intercultural
                 </h3>
                 <p className="text-gray-700">
@@ -194,7 +145,7 @@ const Home = () => {
       <section className="bg-gray-50 py-20">
         <div className="container">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-purple-900 md:text-5xl">
+            <h2 className="mb-4 text-4xl font-bold text-primary md:text-5xl">
               TRANSFORMAÇÕES REAIS
             </h2>
             <p className="text-lg text-gray-600">
@@ -241,7 +192,7 @@ const Home = () => {
           className="absolute inset-0 h-full w-full object-cover"
           fill
         />
-        <div className="absolute inset-0 bg-purple-900/70"></div>
+        <div className="absolute inset-0 bg-primary/70"></div>
 
         <div className="relative z-10 container text-center">
           <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
@@ -253,7 +204,7 @@ const Home = () => {
           </p>
           <Button
             size="lg"
-            className="bg-yellow-400 px-10 py-6 text-lg font-bold text-purple-900 hover:bg-yellow-500"
+            className="bg-yellow-400 px-10 py-6 text-lg font-bold text-primary hover:bg-yellow-500"
           >
             Agendar Conversa Gratuita
           </Button>
@@ -261,7 +212,7 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-purple-900 py-12 text-white">
+      <footer className="bg-primary py-12 text-white">
         <div className="container">
           <div className="mb-8 grid gap-8 md:grid-cols-4">
             <div>
