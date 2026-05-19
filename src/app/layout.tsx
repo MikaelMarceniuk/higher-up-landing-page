@@ -6,6 +6,8 @@ import { AppNavbar } from '@/components/app-navbar'
 
 import './globals.css'
 import { AppFooter } from '@/components/app-footer'
+import { WhatsappButton } from '@/components/whatsapp-btn'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -35,8 +37,16 @@ export default function RootLayout({
           <AppNavbar />
           {children}
           <AppFooter />
+          <WhatsappButton />
         </ThemeProvider>
       </body>
+
+      <Script
+        id="behold-widget"
+        type="module"
+        src="https://w.behold.so/widget.js"
+        strategy="lazyOnload"
+      />
     </html>
   )
 }

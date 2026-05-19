@@ -2,11 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Mail, Phone } from 'lucide-react'
 import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import { CONTACT_LINKS } from '@/constants/contact-links.constants'
 
 export const AppFooter = () => {
   return (
     <footer>
-      {/* Main footer */}
       <div className="bg-[#5f8a8b] py-12 text-white">
         <div className="container grid gap-12 md:grid-cols-3">
           {/* Col 1 - Logo + Nav */}
@@ -18,28 +18,28 @@ export const AppFooter = () => {
               height={80}
             />
             <nav className="flex flex-col gap-2 font-bold">
-              <Link href="#hero" className="transition hover:text-yellow-400">
+              <Link href="#hero" className="transition hover:text-secondary">
                 INÍCIO
               </Link>
               <Link
-                href="#quem-somos"
-                className="transition hover:text-yellow-400"
+                href="#" // TODO: Adicionar link para sobre nós
+                className="transition hover:text-secondary"
               >
                 QUEM SOMOS
               </Link>
               <Link
                 href="#solucoes"
-                className="transition hover:text-yellow-400"
+                className="transition hover:text-secondary"
               >
                 SOLUÇÕES DE COMUNICAÇÃO
               </Link>
-              <Link
-                href="#eventos"
-                className="transition hover:text-yellow-400"
-              >
+              <Link href="#" className="transition hover:text-secondary">
                 EVENTOS
               </Link>
-              <Link href="#blog" className="transition hover:text-yellow-400">
+              <Link
+                href="#" // TODO: Adicionar link para blog
+                className="transition hover:text-secondary"
+              >
                 BLOG
               </Link>
             </nav>
@@ -50,16 +50,16 @@ export const AppFooter = () => {
             <p className="text-lg font-semibold">Higher-Up Business English</p>
 
             <Link
-              href="https://wa.me/5516992218981"
-              className="flex items-center gap-3 transition hover:text-yellow-400"
+              href={CONTACT_LINKS.whatsapp}
+              className="flex items-center gap-3 transition hover:text-secondary"
             >
               <Phone className="h-5 w-5 shrink-0" />
-              +55 (16) 992218981
+              +55 (16) 99221-8981
             </Link>
 
             <Link
               href="mailto:contato@higherup.com.br"
-              className="flex items-center gap-3 transition hover:text-yellow-400"
+              className="flex items-center gap-3 transition hover:text-secondary"
             >
               <Mail className="h-5 w-5 shrink-0" />
               contato@higherup.com.br
@@ -72,16 +72,16 @@ export const AppFooter = () => {
             {/* Social */}
             <div className="mt-2 flex gap-3">
               <Link
-                href="https://instagram.com/higherupenglish"
+                href={CONTACT_LINKS.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 transition hover:opacity-80"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-linear-to-tr from-secondary via-pink-500 to-purple-600 transition hover:opacity-80"
               >
                 <FaInstagram className="h-5 w-5" />
               </Link>
 
               <Link
-                href="#"
+                href={CONTACT_LINKS.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-700 transition hover:opacity-80"
@@ -90,7 +90,7 @@ export const AppFooter = () => {
               </Link>
 
               <Link
-                href="#"
+                href={CONTACT_LINKS.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-red-600 transition hover:opacity-80"
@@ -102,32 +102,11 @@ export const AppFooter = () => {
 
           {/* Col 3 - Instagram grid */}
           <div className="flex flex-col gap-3">
-            <p className="font-bold">SIGA NO INSTA! @HIGHERUPENGLISH</p>
-            <div className="grid grid-cols-3 gap-1">
-              {[
-                '/home-hero.webp',
-                '/home-company.webp',
-                '/home-professional.webp',
-                '/home-cta.webp',
-                '/home-hero.webp',
-                '/home-company.webp',
-                '/home-professional.webp',
-                '/home-cta.webp',
-                '/home-hero.webp',
-              ].map((src, i) => (
-                <div
-                  key={i}
-                  className="relative aspect-square overflow-hidden rounded"
-                >
-                  <Image
-                    src={src}
-                    alt={`Instagram post ${i + 1}`}
-                    fill
-                    className="object-cover transition hover:opacity-80"
-                  />
-                </div>
-              ))}
-            </div>
+            <p className="font-bold">
+              SIGA NO INSTA!{' '}
+              <Link href={CONTACT_LINKS.instagram}>@HIGHERUPENGLISH</Link>
+            </p>
+            <behold-widget feed-id="ZRJDhYcDCKHUZTdbvahe" />
           </div>
         </div>
       </div>
@@ -139,7 +118,7 @@ export const AppFooter = () => {
             Higher Up Business English - Todos os direitos reservados ©{' '}
             {new Date().getFullYear()}
           </p>
-          <p>Website feito por Erica Nunes e CodeUI</p>
+          <p>Website feito por CodeUI</p>
         </div>
       </div>
     </footer>
