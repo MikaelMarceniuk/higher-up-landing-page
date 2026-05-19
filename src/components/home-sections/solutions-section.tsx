@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import { Button } from '../ui/button'
 import { Building2, User } from 'lucide-react'
+import { SECTION_IDS } from '@/constants/section-ids.constants'
 
 export const SolutionsSection = () => {
   return (
-    <section id="solucoes" className="bg-gray-50 py-20">
+    <section id={SECTION_IDS.solutions} className="bg-gray-50 py-20">
       <div className="container">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-bold text-primary md:text-5xl">

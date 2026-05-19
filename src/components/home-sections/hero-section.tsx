@@ -3,12 +3,13 @@ import { Button } from '../ui/button'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { CONTACT_LINKS } from '@/constants/contact-links.constants'
+import { SECTION_IDS } from '@/constants/section-ids.constants'
 
 export const HeroSection = () => {
   return (
     <section
       className="relative flex h-screen w-full items-center justify-center overflow-hidden pt-20"
-      id="hero"
+      id={SECTION_IDS.hero}
     >
       <Image
         src={'/home-hero.webp'}

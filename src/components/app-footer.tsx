@@ -1,10 +1,16 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { Mail, Phone } from 'lucide-react'
 import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 import { CONTACT_LINKS } from '@/constants/contact-links.constants'
+import { useSmoothScroll } from '@/hooks/use-smooth-scroll.hook'
+import { SECTION_IDS } from '@/constants/section-ids.constants'
 
 export const AppFooter = () => {
+  const { scrollTo } = useSmoothScroll()
+
   return (
     <footer>
       <div className="bg-[#5f8a8b] py-12 text-white">
@@ -18,21 +24,24 @@ export const AppFooter = () => {
               height={80}
             />
             <nav className="flex flex-col gap-2 font-bold">
-              <Link href="#hero" className="transition hover:text-secondary">
+              <p
+                className="cursor-pointer transition hover:text-secondary"
+                onClick={() => scrollTo(SECTION_IDS.hero)}
+              >
                 INÍCIO
-              </Link>
+              </p>
               <Link
                 href="#" // TODO: Adicionar link para sobre nós
                 className="transition hover:text-secondary"
               >
                 QUEM SOMOS
               </Link>
-              <Link
-                href="#solucoes"
-                className="transition hover:text-secondary"
+              <p
+                className="cursor-pointer transition hover:text-secondary"
+                onClick={() => scrollTo(SECTION_IDS.solutions)}
               >
                 SOLUÇÕES DE COMUNICAÇÃO
-              </Link>
+              </p>
               <Link href="#" className="transition hover:text-secondary">
                 EVENTOS
               </Link>
