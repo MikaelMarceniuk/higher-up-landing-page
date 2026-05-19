@@ -1,5 +1,7 @@
-dist
-node_modules
-.git
-*.min.js
-*.min.css
+dist/
+node_modules/
+.next/
+.turbo/
+coverage/
+pnpm-lock.yaml
+.pnpm-store/
