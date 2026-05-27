@@ -18,7 +18,7 @@ jobs:
       - name: Set Environment Variables
         run: |
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-          echo "WEB_IMAGE=ghcr.io/$REPO_OWNER/imobiliaria-crm-web" >> $GITHUB_ENV
+          echo "WEB_IMAGE=ghcr.io/$REPO_OWNER/higher-up.landing-page" >> $GITHUB_ENV
           echo "VERSION=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
 
       - name: Log in to GitHub Container Registry
@@ -31,9 +31,10 @@ jobs:
       - name: Build and Push Web
         run: |
           docker build . \
-            --file docker/dockerfile.web \
+            --file docker/dockerfile \
             --build-arg NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }} \
             --tag ${{ env.WEB_IMAGE }}:latest \
             --tag ${{ env.WEB_IMAGE }}:${{ env.VERSION }}
+
           docker push ${{ env.WEB_IMAGE }}:latest
           docker push ${{ env.WEB_IMAGE }}:${{ env.VERSION }}
