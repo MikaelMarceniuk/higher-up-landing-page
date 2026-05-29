@@ -1,7 +1,9 @@
 import { Product } from '@/@types/product.type'
+import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 type SoluctionCardProps = {
   product: Product
@@ -88,17 +90,16 @@ export const SoluctionCard: React.FC<SoluctionCardProps> = ({ product }) => {
           ))}
         </ul>
 
-        <button
-          className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-xs font-bold tracking-widest text-white uppercase transition-opacity hover:opacity-90"
-          style={{ background: product.bg }}
-        >
-          <span>{product.cta}</span>
-          <ArrowRight
-            className="h-4 w-4"
-            style={{ color: product.accent }}
-            strokeWidth={2.5}
-          />
-        </button>
+        <Link href={`/our-solutions/for-professionals/${product.id}`}>
+          <Button style={{ background: product.bg }}>
+            <span>{product.cta}</span>
+            <ArrowRight
+              className="h-4 w-4"
+              style={{ color: product.accent }}
+              strokeWidth={2.5}
+            />
+          </Button>
+        </Link>
       </div>
     </div>
   )

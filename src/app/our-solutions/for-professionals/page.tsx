@@ -21,7 +21,7 @@ const segments = [
   { label: 'Educação', icon: GraduationCap },
 ]
 
-const products: Product[] = [
+const solutions: Product[] = [
   {
     id: 'signature',
     label: 'Signature',
@@ -160,7 +160,7 @@ const ForProfessionalsPage = () => {
 
           {/* 1 col on mobile → 2 col on sm → 4 col on lg */}
           <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6">
-            {products.map((product) => (
+            {solutions.map((product) => (
               <SoluctionCard key={product.id} product={product} />
             ))}
           </div>
