@@ -1,7 +1,7 @@
-import { Geist_Mono, Inter } from 'next/font/google'
+import { Geist_Mono, Inter, Montserrat } from 'next/font/google'
+import localFont from 'next/font/local'
 
 import { cn } from '@/lib/utils'
-import { ThemeProvider } from '@/components/theme-provider'
 import { AppNavbar } from '@/components/app-navbar'
 
 import './globals.css'
@@ -10,6 +10,27 @@ import { WhatsappButton } from '@/components/whatsapp-btn'
 import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  style: ['italic'],
+  variable: '--font-worklab',
+})
+
+const takenByVultures = localFont({
+  src: '../../public/fonts/taken-by-vultures.ttf',
+  variable: '--font-signature',
+})
+
+const agrandir = localFont({
+  src: '../../public/fonts/agrandir-grandheavy.otf',
+  variable: '--font-blueprint',
+})
+
+const lovelo = localFont({
+  src: '../../public/fonts/lovelo-black.otf',
+  variable: '--font-edge',
+})
 
 const fontMono = Geist_Mono({
   subsets: ['latin'],
@@ -29,16 +50,18 @@ export default function RootLayout({
         'antialiased',
         fontMono.variable,
         'font-sans',
-        inter.variable
+        inter.variable,
+        montserrat.variable,
+        takenByVultures.variable,
+        agrandir.variable,
+        lovelo.variable
       )}
     >
       <body>
-        <ThemeProvider>
-          <AppNavbar />
-          {children}
-          <AppFooter />
-          <WhatsappButton />
-        </ThemeProvider>
+        <AppNavbar />
+        {children}
+        <AppFooter />
+        <WhatsappButton />
       </body>
 
       <Script
