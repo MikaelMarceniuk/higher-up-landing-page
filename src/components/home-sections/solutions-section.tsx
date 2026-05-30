@@ -40,9 +40,11 @@ export const SolutionsSection = () => {
                 com idiomas que precisam de soluções especializadas em
                 comunicação corporativa internacional.
               </p>
-              <Button className="bg-secondary font-bold text-primary hover:bg-yellow-500">
-                Saiba Mais
-              </Button>
+              <Link href={'/our-solutions/for-companies'}>
+                <Button className="bg-secondary font-bold text-primary hover:bg-yellow-500">
+                  Saiba Mais
+                </Button>
+              </Link>
             </div>
           </div>
 

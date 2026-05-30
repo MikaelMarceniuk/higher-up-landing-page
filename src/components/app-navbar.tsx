@@ -75,7 +75,7 @@ export const AppNavbar = () => {
                   <ul className="flex w-48 flex-col p-2">
                     <li>
                       <Link
-                        href="#"
+                        href="/our-solutions/for-companies"
                         className="block rounded-md px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-purple-50 hover:text-purple-900"
                       >
                         Para empresas
