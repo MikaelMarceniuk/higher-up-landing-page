@@ -83,7 +83,7 @@ export const AppNavbar = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="/our-solutions/for-professionals"
                         className="block rounded-md px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-purple-50 hover:text-purple-900"
                       >
                         Para profissionais

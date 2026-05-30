@@ -18,12 +18,12 @@ export const SoluctionCard: React.FC<SoluctionCardProps> = ({ product }) => {
         style={{ background: product.bg }}
       >
         <div className="absolute inset-0 overflow-hidden rounded-t-3xl">
-          <Image
+          {/* <Image
             src={product.image}
             alt={product.label}
             fill
             className="object-cover opacity-40 mix-blend-luminosity"
-          />
+          /> */}
           <div
             className="absolute inset-0"
             style={{

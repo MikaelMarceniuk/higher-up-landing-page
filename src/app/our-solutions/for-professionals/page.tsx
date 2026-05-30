@@ -92,7 +92,6 @@ const solutions: Product[] = [
   },
 ]
 
-// ─── Main Page ───────────────────────────────────────────────────────────────
 const ForProfessionalsPage = () => {
   return (
     <div className="w-full bg-white">
