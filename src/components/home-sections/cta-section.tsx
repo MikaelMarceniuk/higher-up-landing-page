@@ -7,7 +7,7 @@ export const CTASection = () => {
   return (
     <section className="relative overflow-hidden py-20">
       <Image
-        src={'/home-cta.webp'}
+        src={'/growth-trajectory-abstract.webp'}
         alt="Próximo nível"
         className="absolute inset-0 h-full w-full object-cover"
         fill

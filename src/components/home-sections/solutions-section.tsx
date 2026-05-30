@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Button } from '../ui/button'
 import { Building2, User } from 'lucide-react'
 import { SECTION_IDS } from '@/constants/section-ids.constants'
+import Link from 'next/link'
 
 export const SolutionsSection = () => {
   return (
@@ -68,9 +69,11 @@ export const SolutionsSection = () => {
                 Soluções para profissionais buscando elevar seu nível de inglês
                 corporativo com foco em comunicação assertiva e intercultural.
               </p>
-              <Button className="bg-secondary font-bold text-primary hover:bg-yellow-500">
-                Saiba Mais
-              </Button>
+              <Link href={'/our-solutions/for-professionals'}>
+                <Button className="bg-secondary font-bold text-primary hover:bg-yellow-500">
+                  Saiba Mais
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
