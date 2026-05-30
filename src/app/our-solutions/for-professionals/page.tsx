@@ -31,7 +31,7 @@ const ForProfessionalsPage = () => {
           </p>
           <h1 className="mx-auto max-w-4xl text-center text-3xl leading-tight font-light text-white md:text-5xl lg:text-6xl">
             Soluções de comunicação em inglês para{' '}
-            <span className="font-normal text-[#D4AF37]">
+            <span className="font-normal text-secondary">
               cada momento da sua jornada
             </span>
             .

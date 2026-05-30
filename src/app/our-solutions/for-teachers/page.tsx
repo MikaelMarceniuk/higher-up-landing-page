@@ -37,27 +37,18 @@ const BENEFITS = [
 
 const ForTeachersPage = () => {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white pt-18.25">
       {/* Hero Section */}
-      <section className="relative flex h-96 w-full items-center justify-center overflow-hidden pt-20">
-        {/* <img
-          src={HERO_IMAGE}
-          alt="Para Professores"
-          className="absolute inset-0 h-full w-full object-cover"
-        /> */}
-        <div className="absolute inset-0 bg-black/40"></div>
-
-        <div className="relative z-10 container flex h-full flex-col items-center justify-center text-center text-white">
-          <div className="max-w-3xl">
-            <h1 className="mb-4 text-5xl leading-tight font-bold md:text-6xl">
-              Para Professores de Inglês
-            </h1>
-            <p className="text-xl font-light md:text-2xl">
-              Capacitação em Inglês Corporativo e Metodologia BELF para
-              Educadores
-            </p>
-          </div>
-        </div>
+      <section className="w-full bg-primary px-6 py-16 md:px-16 md:py-20">
+        <p className="mb-6 text-center text-xs tracking-[0.25em] text-white/50 uppercase">
+          Para Professores de Inglês
+        </p>
+        <h1 className="mx-auto max-w-4xl text-center text-3xl leading-tight font-light text-white md:text-5xl lg:text-6xl">
+          Capacitação em{' '}
+          <span className="font-normal text-secondary">Inglês Corporativo</span>{' '}
+          e Metodologia <span className="font-normal text-secondary">BELF</span>{' '}
+          para Educadores
+        </h1>
       </section>
 
       {/* Intro Section */}
