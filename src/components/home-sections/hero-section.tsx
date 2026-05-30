@@ -1,11 +1,16 @@
+'use client'
+
 import Image from 'next/image'
 import { Button } from '../ui/button'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { CONTACT_LINKS } from '@/constants/contact-links.constants'
 import { SECTION_IDS } from '@/constants/section-ids.constants'
+import { useSmoothScroll } from '@/hooks/use-smooth-scroll.hook'
 
 export const HeroSection = () => {
+  const { scrollTo } = useSmoothScroll()
+
   return (
     <section
       className="relative flex h-screen w-full items-center justify-center overflow-hidden pt-20"
@@ -33,7 +38,8 @@ export const HeroSection = () => {
           <div className="flex flex-col flex-wrap justify-center gap-4 sm:flex-row">
             <Button
               size="lg"
-              className="bg-secondary px-8 py-6 text-lg font-bold text-primary hover:bg-yellow-500"
+              className="bg-secondary px-8 py-6 text-lg font-bold text-primary hover:bg-secondary/80"
+              onClick={() => scrollTo(SECTION_IDS.solutions)}
             >
               Descobrir Programas <ArrowRight className="ml-2" />
             </Button>

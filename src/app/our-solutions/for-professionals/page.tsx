@@ -24,20 +24,20 @@ const segments = [
 const ForProfessionalsPage = () => {
   return (
     <div className="w-full bg-white pt-18.25">
-      <section className="w-full font-sans">
-        <div className="w-full bg-primary px-6 py-16 md:px-16 md:py-20">
-          <p className="mb-10 text-center text-xs tracking-[0.25em] text-white/60 uppercase">
-            Para Profissionais
-          </p>
-          <h1 className="mx-auto max-w-4xl text-center text-3xl leading-tight font-light text-white md:text-5xl lg:text-6xl">
-            Soluções de comunicação em inglês para{' '}
-            <span className="font-normal text-secondary">
-              cada momento da sua jornada
-            </span>
-            .
-          </h1>
-        </div>
+      <section className="w-full bg-primary px-6 py-16 md:px-16 md:py-20">
+        <p className="mb-6 text-center text-xs tracking-[0.25em] text-white/50 uppercase">
+          Para Profissionais
+        </p>
+        <h1 className="mx-auto max-w-4xl text-center text-3xl leading-tight font-light text-white md:text-5xl lg:text-6xl">
+          Soluções de comunicação em inglês para{' '}
+          <span className="font-normal text-secondary">
+            cada momento da sua jornada
+          </span>
+          .
+        </h1>
+      </section>
 
+      <section className="w-full font-sans">
         {/* ── Segments section ── */}
         <div className="w-full bg-[#f5f5f5] px-6 py-14 md:px-16">
           <p className="mb-12 text-center text-xl font-normal text-zinc-800 md:text-2xl">

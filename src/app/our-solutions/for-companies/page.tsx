@@ -1,5 +1,6 @@
 'use client'
 
+import { CTAButton } from '@/components/cta-button'
 import { Button } from '@/components/ui/button'
 import { solutions } from '@/constants/solutions.constants'
 import { cn } from '@/lib/utils'
@@ -147,9 +148,7 @@ const ForCompaniesPage = () => {
           aumentar clareza e operar com segurança em ambientes internacionais.
         </p>
         <div className="mt-8 flex justify-center">
-          <Button className="bg-secondary px-6 py-5 text-sm font-bold text-primary hover:bg-[#c49d2e]">
-            Fale com especialista <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <CTAButton text="Fale com especialista " />
         </div>
       </section>
       {/* ── Como podemos apoiar ── */}
