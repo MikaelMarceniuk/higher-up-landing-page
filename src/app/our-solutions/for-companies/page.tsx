@@ -1,11 +1,9 @@
 'use client'
 
 import { CTAButton } from '@/components/cta-button'
-import { Button } from '@/components/ui/button'
 import { solutions } from '@/constants/solutions.constants'
 import { cn } from '@/lib/utils'
 import {
-  ArrowRight,
   Star,
   User,
   Users,
@@ -63,8 +61,8 @@ const logos = [
   },
   {
     name: 'National Geographic Learning',
-    file: '/logos/national-geographic-learning.svg',
-    className: 'w-auto',
+    file: '/logos/national-geographic-learning.png',
+    className: 'w-auto mix-blend-multiply',
   },
   { name: 'Hydro', file: '/logos/hydro.svg', className: 'w-auto' },
   {

@@ -76,7 +76,10 @@ export const AppFooter = () => {
 
             <p className="text-sm">Atendimento: Seg - Sex 09 às 21h</p>
 
-            <p className="text-sm font-semibold">Proud BNI member</p>
+            <div className="flex items-center gap-3">
+              <Image src="/logos/bni.png" alt="BNI" width={40} height={40} />
+              <p className="text-sm font-semibold">Proud BNI member</p>
+            </div>
 
             {/* Social */}
             <div className="mt-2 flex gap-3">
