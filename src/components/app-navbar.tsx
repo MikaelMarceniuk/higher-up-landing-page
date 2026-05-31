@@ -117,12 +117,12 @@ export const AppNavbar = () => {
             EVENTOS
           </Link>
 
-          <Link
+          {/* <Link
             href="#blog"
             className="text-sm font-medium text-gray-700 transition hover:text-purple-900"
           >
             BLOG
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>
