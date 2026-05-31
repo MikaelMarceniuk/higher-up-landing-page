@@ -111,7 +111,7 @@ export const AppNavbar = () => {
           </Link>
 
           <Link
-            href="#eventos"
+            href="/events"
             className="text-sm font-medium text-gray-700 transition hover:text-purple-900"
           >
             EVENTOS
