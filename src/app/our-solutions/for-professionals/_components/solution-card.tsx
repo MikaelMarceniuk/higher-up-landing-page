@@ -54,15 +54,25 @@ export const SoluctionCard: React.FC<SoluctionCardProps> = ({ product }) => {
         </div>
 
         {/* Product name with its own font */}
-        <h3
-          className={cn(
-            'relative z-10 text-3xl text-white',
-            product.labelClassName
-          )}
-          style={product.fontStyle}
-        >
-          {product.label}
-        </h3>
+        {product.id === 'signature' ? (
+          <Image
+            src="/signature.png"
+            alt="Signature"
+            width={200}
+            height={80}
+            className="relative z-10 h-auto w-40 object-contain brightness-0 invert"
+          />
+        ) : (
+          <h3
+            className={cn(
+              'relative z-10 text-3xl text-white',
+              product.labelClassName
+            )}
+            style={product.fontStyle}
+          >
+            {product.label}
+          </h3>
+        )}
       </div>
 
       {/* Card body */}
