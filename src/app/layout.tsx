@@ -45,14 +45,15 @@ export const metadata: Metadata = {
     template: '%s | Higher-Up',
   },
   description:
-    'A Higher-Up especializa executivos e empresas em inglês para negócios com metodologia BELF. Comunicação de alto impacto para líderes que operam em mercados globais.',
+    'A Higher-Up especializa executivos e empresas em inglês para negócios com pedagogia BELF. Comunicação de alto impacto para líderes que operam em mercados globais.',
   keywords: [
     'inglês para negócios',
     'inglês corporativo',
     'inglês para executivos',
     'BELF',
-    'Business English as a Lingua Franca',
+    'English as a Business Lingua Franca',
     'curso de inglês para empresas',
+    // TODO Colocar ingles para todas as áreas
   ],
   openGraph: {
     type: 'website',

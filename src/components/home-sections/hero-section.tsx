@@ -53,7 +53,7 @@ export const HeroSection = () => {
                 variant="ghost"
                 className="border-white px-8 py-6 text-lg font-bold text-white"
               >
-                Diagnóstico estratégico
+                Agende um diagnóstico estratégico
               </Button>
             </Link>
           </div>

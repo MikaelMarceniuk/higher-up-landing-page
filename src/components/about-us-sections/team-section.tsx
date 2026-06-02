@@ -5,7 +5,7 @@ const TEAM_MEMBERS = [
     id: 1,
     name: 'Hellen Hiroko Hagga',
     position: 'Fundador & CEO',
-    image: '/executive-leadership-moment.webp',
+    image: '/ceo.webp',
   },
 ]
 

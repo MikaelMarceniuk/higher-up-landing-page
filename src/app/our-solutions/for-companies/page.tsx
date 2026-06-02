@@ -149,6 +149,7 @@ const ForCompaniesPage = () => {
           <CTAButton />
         </div>
       </section>
+
       {/* ── Como podemos apoiar ── */}
       <section className="w-full px-6 py-16 md:px-12 lg:px-16">
         <h2 className="mb-3 text-center text-2xl font-light text-primary md:text-3xl">
@@ -171,6 +172,7 @@ const ForCompaniesPage = () => {
           ))}
         </div>
       </section>
+
       {/* ── Formatos de atuação ── */}
       <section className="w-full bg-zinc-50 px-6 py-16 md:px-12 lg:px-16">
         <h2 className="mb-3 text-center text-2xl font-light text-primary md:text-3xl">
@@ -225,6 +227,7 @@ const ForCompaniesPage = () => {
           ))}
         </div>
       </section>
+
       {/* ── Cases de Sucesso ── */}
       <section className="w-full bg-primary px-6 py-16 md:px-12 lg:px-16">
         <h2 className="mb-10 text-center text-2xl font-light text-secondary md:text-3xl">
@@ -264,6 +267,7 @@ const ForCompaniesPage = () => {
           ))}
         </div>
       </section>
+
       {/* ── Logos ── */}
       <section className="w-full bg-zinc-50 px-6 py-14 md:px-12 lg:px-16">
         <h2 className="mb-3 text-center text-2xl font-light text-primary md:text-3xl">
@@ -286,6 +290,10 @@ const ForCompaniesPage = () => {
               />
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center pt-8">
+          <CTAButton />
         </div>
       </section>
     </div>

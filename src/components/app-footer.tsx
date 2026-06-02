@@ -7,7 +7,6 @@ import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 import { CONTACT_LINKS } from '@/constants/contact-links.constants'
 import { useSmoothScroll } from '@/hooks/use-smooth-scroll.hook'
 import { SECTION_IDS } from '@/constants/section-ids.constants'
-import { CTAButton } from './cta-button'
 
 export const AppFooter = () => {
   const { scrollTo } = useSmoothScroll()
@@ -55,8 +54,6 @@ export const AppFooter = () => {
               >
                 BLOG
               </Link> */}
-
-              <CTAButton className="px-4 py-3 text-sm" />
             </nav>
           </div>
 

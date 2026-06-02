@@ -165,57 +165,6 @@ const ForTeachersPage = () => {
           </div>
         </div>
       </section>
-
-      {/* FAQ Section */}
-      <section className="bg-gray-50 py-20">
-        <div className="container">
-          <h2 className="mb-12 text-center text-4xl font-bold text-primary md:text-5xl">
-            Perguntas Frequentes
-          </h2>
-
-          <div className="mx-auto max-w-3xl space-y-6">
-            <div className="rounded-lg bg-white p-6">
-              <h3 className="mb-3 text-xl font-bold text-primary">
-                Qual é o pré-requisito para participar?
-              </h3>
-              <p className="text-gray-700">
-                Seu espaço para descrever os pré-requisitos: nível de inglês
-                mínimo, experiência como professor, etc.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-6">
-              <h3 className="mb-3 text-xl font-bold text-primary">
-                Como funciona o acesso aos materiais?
-              </h3>
-              <p className="text-gray-700">
-                Seu espaço para explicar como os participantes acessam os
-                materiais, plataforma utilizada, suporte técnico, etc.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-6">
-              <h3 className="mb-3 text-xl font-bold text-primary">
-                Posso usar os materiais com meus alunos?
-              </h3>
-              <p className="text-gray-700">
-                Seu espaço para esclarecer sobre direitos de uso dos materiais,
-                licenças e como os professores podem aplicar o aprendizado.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-6">
-              <h3 className="mb-3 text-xl font-bold text-primary">
-                Há suporte após o término do programa?
-              </h3>
-              <p className="text-gray-700">
-                Seu espaço para descrever o suporte contínuo, comunidade de
-                ex-alunos, atualizações, mentoria, etc.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
