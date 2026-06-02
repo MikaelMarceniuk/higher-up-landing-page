@@ -7,13 +7,14 @@ import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 import { CONTACT_LINKS } from '@/constants/contact-links.constants'
 import { useSmoothScroll } from '@/hooks/use-smooth-scroll.hook'
 import { SECTION_IDS } from '@/constants/section-ids.constants'
+import { CTAButton } from './cta-button'
 
 export const AppFooter = () => {
   const { scrollTo } = useSmoothScroll()
 
   return (
     <footer>
-      <div className="bg-[#5f8a8b] py-12 text-white">
+      <div className="bg-muted-foreground py-12 text-white">
         <div className="container grid gap-12 md:grid-cols-3">
           {/* Col 1 - Logo + Nav */}
           <div className="flex flex-col items-center gap-6 text-center">
@@ -31,8 +32,8 @@ export const AppFooter = () => {
                 INÍCIO
               </p>
               <Link
-                href="#" // TODO: Adicionar link para sobre nós
-                className="transition hover:text-secondary"
+                href="/about-us"
+                className="cursor-pointer transition hover:text-secondary"
               >
                 QUEM SOMOS
               </Link>
@@ -42,15 +43,20 @@ export const AppFooter = () => {
               >
                 SOLUÇÕES DE COMUNICAÇÃO
               </p>
-              <Link href="#" className="transition hover:text-secondary">
+              <Link
+                href="/events"
+                className="cursor-pointer transition hover:text-secondary"
+              >
                 EVENTOS
               </Link>
-              <Link
+              {/* <Link
                 href="#" // TODO: Adicionar link para blog
                 className="transition hover:text-secondary"
               >
                 BLOG
-              </Link>
+              </Link> */}
+
+              <CTAButton className="px-4 py-3 text-sm" />
             </nav>
           </div>
 
@@ -130,7 +136,13 @@ export const AppFooter = () => {
             Higher Up Business English - Todos os direitos reservados ©{' '}
             {new Date().getFullYear()}
           </p>
-          <p>Website feito por CodeUI</p>
+          <Link
+            href={'https://codeui.com.br'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>Website feito por CodeUI</p>
+          </Link>
         </div>
       </div>
     </footer>
