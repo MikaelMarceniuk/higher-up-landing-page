@@ -146,7 +146,7 @@ const ForCompaniesPage = () => {
           aumentar clareza e operar com segurança em ambientes internacionais.
         </p>
         <div className="mt-8 flex justify-center">
-          <CTAButton text="Fale com especialista " />
+          <CTAButton />
         </div>
       </section>
       {/* ── Como podemos apoiar ── */}

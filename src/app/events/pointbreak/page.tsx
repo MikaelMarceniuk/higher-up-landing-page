@@ -19,7 +19,7 @@ export default function PointBreak() {
       {/* Hero Section */}
       <section className="relative flex h-screen w-full items-center justify-center overflow-hidden pt-20">
         <Image
-          src="/executive-leadership-moment.webp"
+          src="/events/pointbreak.webp"
           alt="Evento Point Break em Ubatuba"
           fill
           className="object-cover"
@@ -106,8 +106,8 @@ export default function PointBreak() {
               </div>
               <h3 className="mb-3 text-2xl font-bold">100% Imersivo</h3>
               <p className="text-muted-foreground">
-                Ambiente acelerador de desbloqueiro e naturalidade com
-                networking qualificado
+                Ambiente acelerador de desbloqueio e naturalidade com networking
+                qualificado
               </p>
             </div>
           </div>

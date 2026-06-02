@@ -9,40 +9,66 @@ export const MissionVisionValuesSection = () => {
         </h2>
 
         <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-3">
+          {/* Missão */}
           <div className="rounded-lg bg-white p-8 shadow-sm">
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-secondary">
               <Target className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-4 text-2xl font-bold text-primary">Missão</h3>
             <p className="text-muted-foreground">
-              Seu espaço para descrever a missão da Higher Up. O que a empresa
-              se propõe a fazer, para quem, e qual é o impacto que busca gerar
-              no mercado.
+              Ajudamos profissionais a operar globalmente através da comunicação
+              estratégica em inglês.
             </p>
           </div>
 
+          {/* Visão */}
           <div className="rounded-lg bg-white p-8 shadow-sm">
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-secondary">
               <Lightbulb className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-4 text-2xl font-bold text-primary">Visão</h3>
             <p className="text-muted-foreground">
-              Seu espaço para descrever a visão da Higher Up. Onde a empresa
-              quer chegar, qual é o futuro que imagina e como pretende
-              transformar o mercado de educação corporativa.
+              Redefinir a forma como profissionais brasileiros se comunicam em
+              ambientes globais.
             </p>
           </div>
 
+          {/* Valores */}
           <div className="rounded-lg bg-white p-8 shadow-sm">
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-secondary">
               <Heart className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-4 text-2xl font-bold text-primary">Valores</h3>
-            <p className="text-muted-foreground">
-              Seu espaço para descrever os valores da Higher Up. Os princípios
-              que guiam as decisões, as relações com clientes e a forma como a
-              equipe trabalha.
-            </p>
+            <ul className="space-y-4 text-sm text-muted-foreground">
+              <li>
+                <strong className="block text-base font-semibold text-primary">
+                  Comunicação funcional acima da perfeição
+                </strong>
+                Priorizamos clareza, intenção e impacto real em vez de
+                perfeccionismo linguístico.
+              </li>
+              <li>
+                <strong className="block text-base font-semibold text-primary">
+                  Respeito à individualidade comunicativa
+                </strong>
+                Desenvolvemos profissionais sem apagar sotaques, repertórios
+                culturais ou personalidade.
+              </li>
+              <li>
+                <strong className="block text-base font-semibold text-primary">
+                  Autonomia como objetivo
+                </strong>
+                Nosso papel é desenvolver profissionais cada vez mais
+                independentes para atuar globalmente.
+              </li>
+              <li>
+                <strong className="block text-base font-semibold text-primary">
+                  Relações profissionais sustentáveis
+                </strong>
+                Construímos relações transparentes, respeitosas e sustentáveis
+                entre empresa, clientes e mentores.
+              </li>
+            </ul>
           </div>
         </div>
       </div>

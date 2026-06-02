@@ -2,23 +2,23 @@
 
 import { cn } from '@/lib/utils'
 import {
-  Briefcase,
-  Cpu,
-  HeartPulse,
-  Scale,
-  TrendingUp,
-  GraduationCap,
+  Laptop,
+  Users,
+  DollarSign,
+  Hotel,
+  Globe,
+  Megaphone,
 } from 'lucide-react'
 import { SoluctionCard } from './_components/solution-card'
 import { solutions } from '@/constants/solutions.constants'
 
 const segments = [
-  { label: 'Negócios', icon: Briefcase },
-  { label: 'Tecnologia', icon: Cpu },
-  { label: 'Saúde', icon: HeartPulse },
-  { label: 'Jurídico', icon: Scale },
-  { label: 'Finanças', icon: TrendingUp },
-  { label: 'Educação', icon: GraduationCap },
+  { label: 'TI', icon: Laptop },
+  { label: 'RH', icon: Users },
+  { label: 'Finanças', icon: DollarSign },
+  { label: 'Hotelaria', icon: Hotel },
+  { label: 'Comex', icon: Globe },
+  { label: 'Tráfego pago', icon: Megaphone },
 ]
 
 const ForProfessionalsPage = () => {

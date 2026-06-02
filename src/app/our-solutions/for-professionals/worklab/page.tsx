@@ -1,6 +1,5 @@
 import { CTAButton } from '@/components/cta-button'
-import { Button } from '@/components/ui/button'
-import { CheckCircle, ArrowRight, Zap } from 'lucide-react'
+import { CheckCircle, Zap } from 'lucide-react'
 
 /**
  * WorkLab - Grupo de Prática em Inglês
@@ -16,7 +15,7 @@ const PROBLEMS = [
   'Quer participar de discussões mas sente falta de vocabulário',
   'Precisa de prática real com profissionais de verdade',
   'Quer ganhar confiança e segurança ao se posicionar',
-  'Busca aprender sobre tendências globais em inglês',
+  'Busca falar sobre tendências globais em inglês',
 ]
 
 const TOPICS = [
@@ -35,15 +34,15 @@ const TOPICS = [
 ]
 
 const CHARACTERISTICS = [
-  { label: 'Quando', value: 'Sessões semanais ao vivo' },
+  { label: 'Quando', value: 'Sessões semanais ao vivo de 90min' },
   { label: 'Nível', value: 'Intermediário e acima' },
-  { label: 'Formato', value: 'Grupo de até 8 pessoas' },
-  { label: 'Duração', value: '90 minutos por sessão' },
+  { label: 'Formato', value: 'Em grupo' },
+  { label: 'Duração', value: '6 meses' },
 ]
 
 const DIFFERENTIALS = [
-  'Prática guiada em discussões reais sobre negócios',
-  'Feedback em tempo real de profissional experiente',
+  'Prática guiada em discussões sobre negócios',
+  'Simulações de situações reais de trabalho',
   'Networking com profissionais de diferentes áreas',
   'Sem homework, sem provas, sem pressão',
 ]
@@ -97,7 +96,7 @@ const WorklabPage = () => {
               intermediário? Ganhe confiança e segurança ao se posicionar em
               discussões reais sobre negócios e tendências globais.
             </p>
-            <CTAButton text="Agendar Conversa" />
+            <CTAButton />
           </div>
         </div>
       </section>
@@ -246,7 +245,7 @@ const WorklabPage = () => {
                 Agende uma conversa com nosso time. Vamos entender seu nível e
                 seus objetivos para indicar a melhor opção para você.
               </p>
-              <CTAButton text="Agendar conversa" />
+              <CTAButton />
             </div>
           </div>
         </div>

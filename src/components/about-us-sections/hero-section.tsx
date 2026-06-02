@@ -4,7 +4,7 @@ export const HeroSection = () => {
   return (
     <section className="relative flex h-96 w-full items-center justify-center overflow-hidden pt-20">
       <Image
-        src="/international-team-collaboration.webp"
+        src="/about-us-hero.webp"
         alt="Quem Somos - Higher Up"
         fill
         className="object-cover"

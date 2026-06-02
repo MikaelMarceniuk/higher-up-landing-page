@@ -104,7 +104,7 @@ const SignaturePage = () => {
             internacionais.
           </p>
 
-          <CTAButton text="Solicite uma conversa estratégica" />
+          <CTAButton />
         </div>
       </section>
 
@@ -219,7 +219,7 @@ const SignaturePage = () => {
             <p className="text-base font-light text-primary">
               Vamos conversar sobre os desafios e objetivos da sua empresa?
             </p>
-            <CTAButton text="Solicite uma conversa estratégica" />
+            <CTAButton />
           </div>
         </div>
       </section>

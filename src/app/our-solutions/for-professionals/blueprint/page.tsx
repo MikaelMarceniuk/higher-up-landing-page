@@ -571,7 +571,10 @@ export const BlueprintPage = () => {
 
         <div className="relative z-10 container text-center">
           <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
-            Pronto para Resolver Suas Dores?
+            Pronto para levar seu inglês para outro nível e{' '}
+            <span className="text-secondary">
+              ir mais longe em sua carreira?
+            </span>
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-xl text-gray-100">
             Agende uma conversa gratuita com nosso time. Vamos entender suas

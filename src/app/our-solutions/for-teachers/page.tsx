@@ -9,13 +9,31 @@ const MODULES = [
     description:
       'O curso de Fundamentos de ELF é projetado para ajudar professores a compreender a natureza do inglês como língua franca. Aprofunde seu conhecimento sobre o uso do inglês como uma língua de comunicação internacional, destacando suas características, práticas linguísticas e culturais. Este curso irá promover uma mudança drástica de mentalidade e prepará-lo(a) para traduzir esses conceitos em sala de aula.',
   },
+  {
+    id: 2,
+    title: 'Skills and Systems',
+    description:
+      'Nossa mentoria focada nas 4 habilidades (listening, reading, speaking, writing) e nos 4 sistemas (grammar, vocabulary, pronunciation, discourse) tem como objetivo ajudar os professores a desenvolverem estratégias eficazes para ensinar cada uma dessas competências. Se você tem dificuldade em preparar aulas eficazes. Através de orientações práticas, você estará preparado(a) para proporcionar experiências de aprendizado significativas e envolventes aos seus alunos.',
+  },
+  {
+    id: 3,
+    title: 'Feedback efetivo',
+    description:
+      'Feedback construtivo é uma habilidade essencial para o crescimento profissional do professor. Nossa mentoria de feedback oferece ferramentas e técnicas para fornecer avaliações efetivas, incentivando o desenvolvimento contínuo dos alunos. Através dessa prática, os professores têm a oportunidade de criar um ambiente de aprendizado positivo e encorajador.',
+  },
+  {
+    id: 4,
+    title: 'Preparando classes que funcionam',
+    description:
+      'A elaboração de um plano de aula eficaz é um dos principais pilares do sucesso do ensino. Nossa mentoria de Lesson Plan oferece orientação na criação de planos de aula bem estruturados, alinhados aos objetivos de aprendizagem e adaptados às necessidades individuais dos alunos. Através dessa mentoria, você estará mais confiante para planejar e ministrar aulas que maximizam o potencial de aprendizado de seus alunos.',
+  },
 ]
 
 const BENEFITS = [
   {
     id: 1,
     icon: BookOpen,
-    title: 'Metodologia Comprovada',
+    title: 'Metodologias comprovadas',
     description:
       'Aprenda uma metodologia testada com centenas de profissionais, com resultados mensuráveis.',
   },
@@ -44,10 +62,7 @@ const ForTeachersPage = () => {
           Para Professores de Inglês
         </p>
         <h1 className="mx-auto max-w-4xl text-center text-3xl leading-tight font-light text-white md:text-5xl lg:text-6xl">
-          Capacitação em{' '}
-          <span className="font-normal text-secondary">Inglês Corporativo</span>{' '}
-          e Metodologia <span className="font-normal text-secondary">BELF</span>{' '}
-          para Educadores
+          Capacitação em Inglês para Educadores
         </h1>
       </section>
 
@@ -58,12 +73,6 @@ const ForTeachersPage = () => {
             <h2 className="mb-6 text-4xl font-bold text-primary md:text-5xl">
               Transforme Sua Prática Docente
             </h2>
-            <p className="mb-8 text-xl text-gray-700">
-              Nosso programa de treinamento foi desenvolvido para professores de
-              inglês que desejam se especializar em comunicação corporativa e
-              metodologia BELF. Aprenda técnicas comprovadas para preparar seus
-              alunos para o mercado de trabalho globalizado.
-            </p>
             <p className="text-lg text-gray-600">
               Junte-se a centenas de educadores que já transformaram sua prática
               e impactam profissionais em ascensão.
@@ -79,7 +88,7 @@ const ForTeachersPage = () => {
             Estrutura do Programa
           </h2>
 
-          <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-1">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
             {MODULES.map((module) => (
               <div
                 key={module.id}
@@ -104,7 +113,7 @@ const ForTeachersPage = () => {
       <section className="bg-white py-20">
         <div className="container">
           <h2 className="mb-12 text-center text-4xl font-bold text-primary md:text-5xl">
-            Por Que Fazer Este Treinamento?
+            Por Que Fazer nossos Treinamentos?
           </h2>
 
           <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">

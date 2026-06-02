@@ -12,7 +12,7 @@ const EVENTS = [
     time: '3 dias de imersão',
     description:
       'Experiência exclusiva combinando estratégia de comunicação corporativa com atividades de desenvolvimento pessoal em ambiente premium.',
-    image: '/growth-trajectory-abstract.webp',
+    image: '/events/pointbreak.webp',
     capacity: '10 pessoas',
     cta: 'Saiba Mais',
     link: '/events/pointbreak',
