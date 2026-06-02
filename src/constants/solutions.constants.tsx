@@ -19,22 +19,6 @@ export const solutions: Product[] = [
     image: '/images/signature-building.jpg',
   },
   {
-    id: 'blueprint',
-    label: 'Blueprint',
-    tagline: 'Estruture sua comunicação técnica com precisão e clareza.',
-    accent: '#4FC3F7',
-    bg: '#0a1628',
-    features: [
-      'Comunicação técnica avançada',
-      'Documentação e relatórios em inglês',
-      'Apresentações de alto impacto',
-    ],
-    cta: 'Conhecer o Blueprint',
-    // Agrandir Grand → declare via next/font/local as --font-blueprint
-    fontStyle: { fontFamily: 'var(--font-blueprint), sans-serif' },
-    image: '/images/blueprint-bg.jpg',
-  },
-  {
     id: 'edge',
     label: 'Edge',
     tagline: 'Fluência acelerada para profissionais que não podem esperar.',
@@ -49,6 +33,22 @@ export const solutions: Product[] = [
     // Lovelo → declare via next/font/local as --font-edge
     fontStyle: { fontFamily: 'var(--font-edge), sans-serif' },
     image: '/images/edge-bg.jpg',
+  },
+  {
+    id: 'blueprint',
+    label: 'Blueprint',
+    tagline: 'Estruture sua comunicação técnica com precisão e clareza.',
+    accent: '#4FC3F7',
+    bg: '#0a1628',
+    features: [
+      'Comunicação técnica avançada',
+      'Documentação e relatórios em inglês',
+      'Apresentações de alto impacto',
+    ],
+    cta: 'Conhecer o Blueprint',
+    // Agrandir Grand → declare via next/font/local as --font-blueprint
+    fontStyle: { fontFamily: 'var(--font-blueprint), sans-serif' },
+    image: '/images/blueprint-bg.jpg',
   },
   {
     id: 'worklab',
