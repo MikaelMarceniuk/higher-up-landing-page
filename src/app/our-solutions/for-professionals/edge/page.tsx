@@ -1,7 +1,17 @@
 import { CTAButton } from '@/components/cta-button'
-import { Button } from '@/components/ui/button'
 import { Check, Clock, Users, Zap, BookOpen, TrendingUp } from 'lucide-react'
+import { Metadata } from 'next'
 import Image from 'next/image'
+
+export const metadata: Metadata = {
+  title: 'Edge — Inglês para Apresentações e Negociações',
+  description:
+    'Com o Edge, executivos ganham precisão e confiança em apresentações, negociações e reuniões internacionais em inglês.',
+  openGraph: {
+    url: '/our-solutions/for-professionals/edge',
+    images: [{ url: '/og/og-edge.png', width: 1200, height: 630 }],
+  },
+}
 
 export default function Edge() {
   return (

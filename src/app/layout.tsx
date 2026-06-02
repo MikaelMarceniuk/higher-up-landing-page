@@ -8,6 +8,7 @@ import './globals.css'
 import { AppFooter } from '@/components/app-footer'
 import { WhatsappButton } from '@/components/whatsapp-btn'
 import Script from 'next/script'
+import { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -37,6 +38,36 @@ const fontMono = Geist_Mono({
   variable: '--font-mono',
 })
 
+export const metadata: Metadata = {
+  metadataBase: new URL('https://higher-up.com.br'),
+  title: {
+    default: 'Higher-Up | Inglês para Negócios',
+    template: '%s | Higher-Up',
+  },
+  description:
+    'A Higher-Up especializa executivos e empresas em inglês para negócios com metodologia BELF. Comunicação de alto impacto para líderes que operam em mercados globais.',
+  keywords: [
+    'inglês para negócios',
+    'inglês corporativo',
+    'inglês para executivos',
+    'BELF',
+    'Business English as a Lingua Franca',
+    'curso de inglês para empresas',
+  ],
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    siteName: 'Higher-Up',
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -44,7 +75,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt_BR"
       suppressHydrationWarning
       className={cn(
         'antialiased',
@@ -58,6 +89,26 @@ export default function RootLayout({
       )}
     >
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'EducationalOrganization',
+              name: 'Higher-Up Business English',
+              url: 'https://higher-up.com.br',
+              description:
+                'Especialistas em inglês para negócios com metodologia BELF para executivos e empresas.',
+              sameAs: [
+                'https://www.instagram.com/higherupenglish',
+                'https://www.linkedin.com/company/higher-up-english',
+              ],
+              areaServed: 'BR',
+              availableLanguage: 'Portuguese',
+            }),
+          }}
+        />
+
         <AppNavbar />
         {children}
         <AppFooter />

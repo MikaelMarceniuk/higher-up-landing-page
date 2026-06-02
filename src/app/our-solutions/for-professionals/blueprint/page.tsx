@@ -10,8 +10,19 @@ import {
   TrendingUp,
   Globe2,
 } from 'lucide-react'
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Blueprint — Inglês para Liderança e Alta Gestão',
+  description:
+    'Blueprint é o programa da Higher-Up para desenvolver inglês estratégico em times de liderança. Comunicação executiva aplicada ao dia a dia corporativo.',
+  openGraph: {
+    url: '/our-solutions/for-professionals/blueprint',
+    images: [{ url: '/og/og-blueprint.png', width: 1200, height: 630 }],
+  },
+}
 
 interface Journey {
   id: string

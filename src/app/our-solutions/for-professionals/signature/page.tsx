@@ -1,7 +1,4 @@
-'use client'
-
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import {
   Users,
   Globe,
@@ -13,6 +10,17 @@ import {
   UsersRound,
 } from 'lucide-react'
 import { CTAButton } from '@/components/cta-button'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Signature — Mentoria de Inglês para Executivos',
+  description:
+    'O programa Signature da Higher-Up é uma mentoria exclusiva de inglês para executivos que precisam de comunicação de alto impacto em contextos internacionais.',
+  openGraph: {
+    url: '/our-solutions/for-professionals/signature',
+    images: [{ url: '/og/og-signature.png', width: 1200, height: 630 }],
+  },
+}
 
 const audiences = [
   {

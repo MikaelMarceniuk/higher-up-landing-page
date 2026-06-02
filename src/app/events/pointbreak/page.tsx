@@ -1,5 +1,3 @@
-'use client'
-
 import { Button } from '@/components/ui/button'
 import {
   ArrowRight,
@@ -10,8 +8,19 @@ import {
   Waves,
   Award,
 } from 'lucide-react'
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Pointbreak — Evento de Inglês para Negócios',
+  description:
+    'Pointbreak é o evento da Higher-Up que reúne executivos para imersão em inglês para negócios, networking e comunicação de alto impacto.',
+  openGraph: {
+    url: '/events/pointbreak',
+    images: [{ url: '/og/og-pointbreak.png', width: 1200, height: 630 }],
+  },
+}
 
 export default function PointBreak() {
   return (

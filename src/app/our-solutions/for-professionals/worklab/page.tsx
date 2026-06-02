@@ -1,14 +1,16 @@
 import { CTAButton } from '@/components/cta-button'
 import { CheckCircle, Zap } from 'lucide-react'
+import { Metadata } from 'next'
 
-/**
- * WorkLab - Grupo de Prática em Inglês
- *
- * Design Philosophy: Luxo Contemporâneo com Narrativa Visual
- * - Página para grupo de prática para profissionais intermediários
- * - Fonte: Montserrat itálico
- * - Paleta: Roxo profundo (#45023e), Amarelo vibrante (#ffd400), Azul-acinzentado (#6a8d92), Cinza (#e5e5e5)
- */
+export const metadata: Metadata = {
+  title: 'WorkLab — Treinamento de Inglês In-Company',
+  description:
+    'O WorkLab leva treinamento de inglês corporativo direto para dentro da sua empresa, com trilhas customizadas por área e nível.',
+  openGraph: {
+    url: '/our-solutions/for-professionals/worklab',
+    images: [{ url: '/og/og-worklab.png', width: 1200, height: 630 }],
+  },
+}
 
 const PROBLEMS = [
   'Você consegue entender, mas trava na hora de falar',
