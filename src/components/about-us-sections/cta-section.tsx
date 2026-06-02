@@ -1,5 +1,4 @@
-import { ArrowRight } from 'lucide-react'
-import { Button } from '../ui/button'
+import { CTAButton } from '../cta-button'
 
 export const CTASection = () => {
   return (
@@ -15,19 +14,7 @@ export const CTASection = () => {
             próximo nível.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Button
-              size="lg"
-              className="bg-yellow-400 px-8 py-6 text-lg font-bold text-primary hover:bg-secondary"
-            >
-              Conhecer Programas <ArrowRight className="ml-2" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary px-8 py-6 text-lg font-bold text-primary hover:bg-purple-50"
-            >
-              Agendar Conversa
-            </Button>
+            <CTAButton />
           </div>
         </div>
       </div>
