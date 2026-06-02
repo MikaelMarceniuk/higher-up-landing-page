@@ -40,7 +40,7 @@ export const StorySection = () => {
             </p>
             <p>
               Hoje, a Higher-Up ajuda profissionais a desenvolverem habilidades
-              de comunicação estratégica para ambientes internacionais reais —
+              de comunicação estratégica para ambientes internacionais reais,
               com presença e autenticidade.
             </p>
           </div>
