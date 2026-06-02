@@ -7,9 +7,32 @@ import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 import { CONTACT_LINKS } from '@/constants/contact-links.constants'
 import { useSmoothScroll } from '@/hooks/use-smooth-scroll.hook'
 import { SECTION_IDS } from '@/constants/section-ids.constants'
+import { usePathname, useRouter } from 'next/navigation'
 
 export const AppFooter = () => {
   const { scrollTo } = useSmoothScroll()
+  const path = usePathname()
+  const router = useRouter()
+
+  const isRootPage = path == '/'
+
+  const onHomeClickHandler = () => {
+    if (!isRootPage) {
+      router.push(`/#${SECTION_IDS.hero}`)
+      return
+    }
+
+    scrollTo(SECTION_IDS.hero)
+  }
+
+  const onSolucaoClickHandler = () => {
+    if (!isRootPage) {
+      router.push(`/#${SECTION_IDS.solutions}`)
+      return
+    }
+
+    scrollTo(SECTION_IDS.solutions)
+  }
 
   return (
     <footer>
@@ -26,7 +49,7 @@ export const AppFooter = () => {
             <nav className="flex flex-col gap-2 font-bold">
               <p
                 className="cursor-pointer transition hover:text-secondary"
-                onClick={() => scrollTo(SECTION_IDS.hero)}
+                onClick={onHomeClickHandler}
               >
                 INÍCIO
               </p>
@@ -38,7 +61,7 @@ export const AppFooter = () => {
               </Link>
               <p
                 className="cursor-pointer transition hover:text-secondary"
-                onClick={() => scrollTo(SECTION_IDS.solutions)}
+                onClick={onSolucaoClickHandler}
               >
                 SOLUÇÕES DE COMUNICAÇÃO
               </p>
