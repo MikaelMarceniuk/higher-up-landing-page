@@ -95,9 +95,7 @@ export default function RootLayout({
         lovelo.variable
       )}
     >
-      <head>
-        <UmamiAnalytics />
-      </head>
+      <head>{process.env.NODE_ENV == 'production' && <UmamiAnalytics />}</head>
       <body>
         <script
           type="application/ld+json"
