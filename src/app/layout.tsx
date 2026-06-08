@@ -9,6 +9,7 @@ import { AppFooter } from '@/components/app-footer'
 import { WhatsappButton } from '@/components/whatsapp-btn'
 import Script from 'next/script'
 import { Metadata } from 'next'
+import { UmamiAnalytics } from '@/components/umami-analytics.script'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -53,7 +54,12 @@ export const metadata: Metadata = {
     'BELF',
     'English as a Business Lingua Franca',
     'curso de inglês para empresas',
-    // TODO Colocar ingles para todas as áreas
+    'ingles para ti',
+    'ingles para rh',
+    'ingles para financas',
+    'ingles para hotelaria',
+    'ingles para comex',
+    'ingles para trafego pago',
   ],
   openGraph: {
     type: 'website',
@@ -89,6 +95,9 @@ export default function RootLayout({
         lovelo.variable
       )}
     >
+      <head>
+        <UmamiAnalytics />
+      </head>
       <body>
         <script
           type="application/ld+json"

@@ -1,5 +1,3 @@
-'use client'
-
 import { CTAButton } from '@/components/cta-button'
 import { solutions } from '@/constants/solutions.constants'
 import { cn } from '@/lib/utils'
