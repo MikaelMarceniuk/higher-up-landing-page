@@ -152,8 +152,8 @@ export const ProgrammesSection = () => {
             Formato
           </span>
           <p className="mb-0 text-[0.9rem] leading-normal text-white/75">
-            Programa individual. Cada sessão trabalha a comunicação que sua
-            startup precisa usar — não exercícios genéricos.
+            Programa individual ou em grupo. Cada sessão trabalha a comunicação
+            que sua startup precisa usar — não exercícios genéricos.
           </p>
           <a
             href={whatsappWithText(

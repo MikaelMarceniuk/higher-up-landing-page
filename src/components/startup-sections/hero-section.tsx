@@ -11,7 +11,7 @@ const highlights = [
     desc: 'para conversas que importam agora',
   },
   {
-    title: 'Foco individual',
+    title: 'Programa individual ou em grupo',
     desc: 'no desafio e estágio da sua startup',
   },
   {
