@@ -20,12 +20,6 @@ const highlights = [
   },
 ]
 
-const conversationLines = [
-  'w-[86%] -rotate-[17deg]',
-  'ml-[20%] w-[61%] rotate-[22deg]',
-  'ml-[6%] w-[76%] -rotate-[5deg]',
-]
-
 export const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-[radial-gradient(circle_at_78%_35%,var(--primary)_0%,#2a001f_100%)] text-white">
@@ -47,20 +41,20 @@ export const HeroSection = () => {
       />
 
       <div className="relative z-10 container flex min-h-202.5 flex-col pt-40 pb-12 md:pt-48">
-        <Reveal className="mb-14 w-full lg:w-[min(725px,75%)]">
+        <Reveal className="mb-14 w-full max-w-250">
           <Eyebrow line className="text-secondary">
             Higher Up / Startup Programme
           </Eyebrow>
           <h1
             className={cn(
               displayFont,
-              'mb-6 max-w-200 text-[clamp(2.8rem,12vw,4rem)] leading-[1.03] font-extrabold tracking-[-0.065em] md:text-[clamp(3rem,5.25vw,5.35rem)]'
+              'mb-6 text-[clamp(2.8rem,12vw,4rem)] leading-[1.03] font-extrabold tracking-[-0.065em] md:text-[clamp(3rem,5.25vw,5.35rem)]'
             )}
           >
             O próximo mercado da sua startup começa com uma{' '}
             <span className="text-secondary">conversa que convence.</span>
           </h1>
-          <p className="mb-8 max-w-152.5 text-[1.05rem] leading-[1.55] text-white/85 md:text-[clamp(1.05rem,1.6vw,1.3rem)]">
+          <p className="mb-8 max-w-180 text-[1.05rem] leading-[1.55] text-white/85 md:text-[clamp(1.05rem,1.6vw,1.3rem)]">
             Mentoria individual de comunicação em inglês para founders e equipes
             que precisam transformar oportunidades internacionais em negócios
             concretos.
@@ -76,47 +70,6 @@ export const HeroSection = () => {
             <ScrollLink targetId="modalidades">
               Conheça as modalidades
             </ScrollLink>
-          </div>
-        </Reveal>
-
-        <Reveal
-          delay={120}
-          className="absolute top-60 right-8 hidden w-[min(314px,29vw)] lg:block"
-        >
-          <div className="rotate-4 bg-secondary p-5 text-[#2a001f] shadow-[20px_24px_0_rgba(0,0,0,.11)]">
-            <div className="flex items-start gap-2 text-[0.68rem] leading-tight font-extrabold tracking-[0.06em] uppercase">
-              <span className="mt-0.5 inline-block size-2.25 shrink-0 rounded-full bg-[#2a001f] shadow-[0_0_0_4px_rgba(69,2,62,.15)]" />
-              <span>
-                De oportunidade
-                <br />a negociação
-              </span>
-              <span
-                className={cn(
-                  displayFont,
-                  'ml-auto text-xl tracking-[-0.08em]'
-                )}
-              >
-                01
-              </span>
-            </div>
-            <div aria-hidden="true" className="h-31 pt-6">
-              {conversationLines.map((line) => (
-                <div
-                  key={line}
-                  className={cn(
-                    'relative h-8.25 origin-left border-t-2 border-[#2a001f]',
-                    line
-                  )}
-                >
-                  <i className="absolute -top-1 left-[42%] block size-1.75 rounded-full bg-[#2a001f]" />
-                  <b className="absolute -top-1.5 right-0 size-2.75 rounded-full border-2 border-[#2a001f] bg-secondary" />
-                </div>
-              ))}
-            </div>
-            <p className="mb-0 border-t border-primary/25 pt-2 leading-snug font-semibold">
-              Clareza para apresentar, negociar e construir relações em
-              ambientes globais.
-            </p>
           </div>
         </Reveal>
 
