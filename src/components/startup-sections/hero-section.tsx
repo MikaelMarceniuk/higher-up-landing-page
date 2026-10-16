@@ -2,7 +2,8 @@ import { CTAButton } from '@/components/cta-button'
 import { Reveal } from '@/components/reveal'
 import { whatsappWithText } from '@/constants/contact-links.constants'
 import { cn } from '@/lib/utils'
-import { ctaClass, displayFont, Eyebrow, ScrollLink } from './startup-ui'
+import { ScrollLink } from './scroll-link'
+import { ctaClass, displayFont, Eyebrow } from './startup-ui'
 
 const highlights = [
   {
@@ -46,7 +47,7 @@ export const HeroSection = () => {
       />
 
       <div className="relative z-10 container flex min-h-202.5 flex-col pt-40 pb-12 md:pt-48">
-        <Reveal className="w-full lg:w-[min(725px,75%)]">
+        <Reveal className="mb-14 w-full lg:w-[min(725px,75%)]">
           <Eyebrow line className="text-secondary">
             Higher Up / Startup Programme
           </Eyebrow>

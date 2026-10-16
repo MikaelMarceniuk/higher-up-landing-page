@@ -55,8 +55,7 @@ export const ProgrammesSection = () => {
           <Reveal>
             <SectionMarker number="02" label="Modalidades" onDark />
             <h2 className={headingClass}>
-              O programa no ritmo
-              <br />
+              O programa no ritmo <br className="hidden lg:block" />
               do seu <span className="text-secondary">momento.</span>
             </h2>
           </Reveal>
@@ -82,7 +81,7 @@ export const ProgrammesSection = () => {
                   )}
                 >
                   {programme.accent && (
-                    <div className="absolute top-12 -right-10.5 rotate-43 bg-secondary px-13 py-1.5 text-[0.62rem] font-extrabold tracking-[0.08em] text-primary uppercase">
+                    <div className="absolute top-32 -right-10.5 hidden rotate-43 bg-secondary px-13 py-1.5 text-[0.62rem] font-extrabold tracking-[0.08em] text-primary uppercase lg:block">
                       {programme.accent}
                     </div>
                   )}
@@ -93,6 +92,11 @@ export const ProgrammesSection = () => {
                   </div>
 
                   <div className="pt-10">
+                    {programme.accent && (
+                      <span className="mb-4 inline-block bg-secondary px-2.5 py-1 text-[0.62rem] font-extrabold tracking-[0.08em] text-primary uppercase lg:hidden">
+                        {programme.accent}
+                      </span>
+                    )}
                     <p
                       className={cn(
                         displayFont,
@@ -106,7 +110,7 @@ export const ProgrammesSection = () => {
                     </span>
                   </div>
 
-                  <div className="max-w-105 pt-10">
+                  <div className="max-w-105 pt-10 pb-10">
                     <p className="mb-6 text-[1.11rem] leading-[1.4] font-semibold md:min-h-14.5">
                       {programme.statement}
                     </p>
@@ -127,7 +131,7 @@ export const ProgrammesSection = () => {
                     </ul>
                   </div>
 
-                  <div className="mt-auto flex items-end justify-between gap-4 border-t border-current pt-6 max-md:mt-10">
+                  <div className="mt-auto flex items-end justify-between gap-4 border-t border-current pt-6">
                     <strong
                       className={cn(displayFont, 'text-2xl tracking-[-0.05em]')}
                     >

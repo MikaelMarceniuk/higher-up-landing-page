@@ -1,6 +1,7 @@
 import { Reveal } from '@/components/reveal'
 import { cn } from '@/lib/utils'
-import { displayFont, Eyebrow, headingClass, ScrollLink } from './startup-ui'
+import { ScrollLink } from './scroll-link'
+import { displayFont, Eyebrow, headingClass } from './startup-ui'
 
 export const BelfSection = () => {
   return (

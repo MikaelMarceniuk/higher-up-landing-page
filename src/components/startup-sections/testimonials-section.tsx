@@ -79,16 +79,13 @@ export const TestimonialsSection = () => {
           </Reveal>
         </div>
 
-        <Reveal
-          delay={130}
-          className="relative mt-10 min-h-96 md:mt-17 md:min-h-80"
-        >
+        <Reveal delay={130} className="mt-10 grid md:mt-17">
           {testimonials.map((testimonial, i) => (
             <figure
               key={testimonial.name}
               aria-hidden={i !== index}
               className={cn(
-                'absolute inset-0 m-0 flex flex-col justify-between border-t border-white/25 pt-4 transition-all duration-350 md:pl-[7%] lg:pl-[13%]',
+                'col-start-1 row-start-1 m-0 flex flex-col justify-between border-t border-white/25 pt-4 transition-all duration-350 md:pl-[7%] lg:pl-[13%]',
                 i === index
                   ? 'pointer-events-auto translate-x-0 opacity-100'
                   : 'pointer-events-none translate-x-7.5 opacity-0'
