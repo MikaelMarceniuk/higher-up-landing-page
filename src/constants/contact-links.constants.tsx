@@ -4,3 +4,6 @@ export const CONTACT_LINKS = {
   linkedin: 'https://www.linkedin.com/company/higher-up-english/',
   youtube: 'https://www.youtube.com/@higherupbusinessenglish',
 }
+
+export const whatsappWithText = (text: string) =>
+  `${CONTACT_LINKS.whatsapp}?text=${encodeURIComponent(text)}`

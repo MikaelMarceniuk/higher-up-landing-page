@@ -5,19 +5,17 @@ import { cn } from '@/lib/utils'
 
 type CTAButtonProps = {
   text?: string
+  href?: string
   className?: string
 }
 
 export const CTAButton: React.FC<CTAButtonProps> = ({
   text = 'Agendar diagnóstico estratégico',
+  href = CONTACT_LINKS.whatsapp,
   className,
 }) => {
   return (
-    <Link
-      href={CONTACT_LINKS.whatsapp}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <Link href={href} target="_blank" rel="noopener noreferrer">
       <Button
         size="lg"
         className={cn(
