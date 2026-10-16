@@ -1,4 +1,10 @@
-import { Geist_Mono, Inter, Montserrat } from 'next/font/google'
+import {
+  DM_Sans,
+  Geist_Mono,
+  Inter,
+  Manrope,
+  Montserrat,
+} from 'next/font/google'
 import localFont from 'next/font/local'
 
 import { cn } from '@/lib/utils'
@@ -32,6 +38,16 @@ const agrandir = localFont({
 const lovelo = localFont({
   src: '../../public/fonts/lovelo-black.otf',
   variable: '--font-edge',
+})
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-startup-display',
+})
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-startup-text',
 })
 
 const fontMono = Geist_Mono({
@@ -92,7 +108,9 @@ export default function RootLayout({
         montserrat.variable,
         takenByVultures.variable,
         agrandir.variable,
-        lovelo.variable
+        lovelo.variable,
+        manrope.variable,
+        dmSans.variable
       )}
     >
       <head>{process.env.NODE_ENV == 'production' && <UmamiAnalytics />}</head>
